@@ -31,11 +31,11 @@
 html {
   scroll-behavior: smooth;
 }
-body {
+/* body {
   padding: 0 0;
-}
+} */
 section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,9 +44,6 @@ section {
 }
 .row {
   display: flex;
-}
-.text-content {
-  margin: 0 10%;
 }
 .col {
   text-align: justify;
@@ -74,9 +71,12 @@ h1 {
 
 /* navigation bar */
 nav {
+  display: flex;
+  height: 3rem;
   background-color: #27374d;
-  padding: 0.6rem 0;
+  padding: 0.6rem 5%;
   position: fixed;
+  justify-content: space-between;
   top: 0;
   left: 0;
   right: 0;
@@ -86,7 +86,6 @@ nav {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 2rem;
 }
 .nav-menu li {
   padding-left: 0;
@@ -96,7 +95,6 @@ nav {
   word-spacing: 20px;
 }
 .nav-menu li a {
-  /* transition: color 0.5s, border-botton 4s; */
   display: inline-block;
   color: #dde6ed;
 }
@@ -139,6 +137,9 @@ nav {
 #about {
   background: linear-gradient(#27374d, 60%, #345077);
   color: #dde6ed;
+}
+.text-content {
+  margin: 0 10%;
 }
 
 /* section project */
